@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <main class="mainContainer login">
+        <section class="container">
+            <div class="inner-section">
+                <div class="logo-flex">
+                    <a href="https://leo9studio.com" class="logo anim-link">
+                        <img src="img/logo.svg" class="themeImg" alt="Logo">
+                    </a>
+                </div>
+                <div class="hdg">
+                    <h2>
+                        Login
+                    </h2>
+                </div>
+                <form action="" id="myform">
+                    <div class="input-box usrname">
+                        <span>Username</span>
+                        <input type="text" class="form-input " required>
+                    </div>
+                    <div class="input-box password">
+                        <span>Password</span>
+                        <input type="password" class="form-input " required id="password">
+                    </div>
+                    <button class="button-start"><span>LOGIN</span><em>LOGIN</em> </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/link/jquery-3.4.1.min.js"></script>
+    <script src="js/link/jquery.validate.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+        $("#myform").validate({
+            rules: {
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                password_confirm: {
+                    required: true,
+                    minlength: 5,
+                    equalTo: "#password"
+                }
+
+
+            }
+        });
+    </script>
+</body>
+
+</html>

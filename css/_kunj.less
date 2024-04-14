@@ -1,0 +1,237 @@
+// .demoContainer {
+//   height: 100px;
+//   margin: 0 auto;
+//   width: 400px;
+// }
+// .sliderContainer {
+//   position: relative;
+//   border-radius: 20px;
+//   background: #f5f5fa;
+//   width: 400px;
+//   height: 3px;
+//   margin-top: 60px;
+// }
+// .sliderContainer:after {
+//   content: "";
+//   clear: both;
+//   display: block;
+// }
+
+// .slider_a {
+//   background: transparent;
+// }
+// .slider_b {
+//   background: #fc5d7d;
+//   border-radius: 20px;
+// }
+// .slider_c {
+//   background: transparent;
+// }
+
+// .slider_adj {
+//   position: absolute;
+//   padding: 3px 10px;
+//   background: #fff;
+//   top: 12px;
+//   cursor: move;
+//   user-select: none;
+//   z-index: 1;
+//   font-size: 13px;
+//   color: #333;
+//   border-radius: 20px;
+//   width: 20px;
+//   text-align: center;
+//   top: -28px !important;
+// }
+// .slider_adj_1 {
+// }
+// .slider_adj_2 {
+//   z-index: 3;
+// }
+
+// // .multi-range-slider-tooltip.active {
+// //   border-radius: 50% 50% 50% 0;
+// //   -webkit-transform: rotate(-45deg) translate(-5px,-4px) scale(1);
+// //   transform: rotate(-45deg) translate(-5px,-4px) scale(1);
+// // }
+
+// .multi-range-slider-tooltip {
+//   position: absolute;
+//   top: -28px;
+//   background-color: #1266f1;
+//   -webkit-transform-origin: 50% 50%;
+//   transform-origin: 50% 50%;
+//   border: none;
+//   -webkit-transition: top 0.2s, border-radius 0.2s, -webkit-transform 0.2s;
+//   transition: top 0.2s, border-radius 0.2s, -webkit-transform 0.2s;
+//   transition: top 0.2s, transform 0.2s, border-radius 0.2s;
+//   transition: top 0.2s, transform 0.2s, border-radius 0.2s,
+//     -webkit-transform 0.2s;
+//   color: #fff;
+//   border-radius: 50% 50% 50% 0;
+//   -webkit-transform: rotate(-45deg) translate(-5px, -4px) scale(0);
+//   transform: rotate(-45deg) translate(-5px, -4px) scale(0);
+// }
+// .output {
+//   margin: 0;
+//   width: 50px;
+//   height: 50px;
+//   line-height: 50px;
+//   border-radius: 50% 50% 5px 50%;
+//   background-color: rgba(249, 92, 124, 0.15);
+//   border: 1px solid #fc5d7d;
+//   text-align: center;
+//   -webkit-transform: rotate(45deg);
+//   -moz-transform: rotate(45deg);
+//   -ms-transform: rotate(45deg);
+//   transform: rotate(45deg);
+//   position: absolute;
+//   top: -80px !important;
+//   left: 45px;
+//   cursor: pointer;
+//   p {
+//     pointer-events: none;
+//     font-size: 20px;
+//     line-height: 1.5;
+//     font-weight: 800;
+//     font-family: "bold";
+//     padding: 8px 10px;
+//     color: #000;
+//     text-align: center;
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -ms-transform: rotate(-45deg);
+//     transform: rotate(-45deg);
+//     position: static !important;
+//     background: transparent;
+//     width: 100%;
+//   }
+// }
+// .double-range-slider {
+//   height: 150px;
+//   padding: 20px;
+// }
+// .drag-circle {
+//   position: absolute;
+//   top: -15px;
+//   left: 118.333px;
+//   height: 30px;
+//   width: 30px;
+//   background: #fff;
+//   border: 3px solid #fc5d7d;
+//   border-radius: 50%;
+// }
+// .slider_adj {
+//   -webkit-transform: rotate(45deg) translateY(25%);
+//   transform: rotate(45deg) translateY(25%);
+//   color: #fff;
+//   height: 30px;
+//   font-size: 10px;
+//   display: block;
+//   width: 30px;
+//   text-align: center;
+//   background: #000;
+// }
+// .draggable-circle {
+//   background-color: #fff;
+//   height: 30px;
+//   width: 30px;
+//   border: 3px solid #fc5d7d;
+//   border-radius: 50%;
+// }
+// .color-picker-ct {
+//   max-width: 400px;
+//   margin: 0 auto;
+//   height: 100px;
+// }
+// .IroSliderBg {
+//   height: 10px !important;
+// }
+.color-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.color-list li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.colors {
+  background-color: #f3f3ff;
+  border: 2px solid #f3f3ff;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    margin: 16px auto;
+    vertical-align: middle;
+  }
+}
+
+.add-colors {
+  background-color: #fff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+
+  svg {
+    margin: 16px auto;
+    vertical-align: middle;
+  }
+}
+.color-picker-ct {
+  position: absolute;
+  background-color: #fff;
+  border: 5px solid #fff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 15px;
+  display: none;
+  left: 50%;
+  margin-left: -160px;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 5px solid #fff;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    z-index: -1;
+  }
+}
+.IroHandle {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.color-list .active .color-picker-ct {
+  display: block;
+}
+.color-picker-section {
+  height: 200px;
+}
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.IroColorPicker{
+  rect{
+
+  }
+}

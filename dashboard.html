@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <main class="mainContainer dashboard">
+
+        <div class="deskHeader">
+            <header class="desk-header innerHeader">
+                <div class="container">
+                    <div class="logo-flex">
+                        <a href="https://leo9studio.com" class="logo anim-link">
+                            <img src="img/logo.svg" data-light="img/logo.svg" data-dark="./img/logo-dark.svg"
+                                class="themeImg" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="navigation">
+                        <li><a href='#'><img src="img/logout.png"><span>Logout</span> </a></li>
+                    </ul>
+
+                </div>
+
+            </header>
+        </div>
+        <section class="container mr-top">
+            <section class="counters">
+
+                <div class="w100">
+                    <section class="count-fig">
+                        <article class="counters-sec">
+                            <div class="title">Totle</div>
+                            <div class="count">11</div>
+                        </article>
+                        <article class="counters-sec persona">
+                            <div class="title">Persona</div>
+                            <div class="count">11</div>
+                        </article>
+                        <article class="counters-sec branding">
+                            <div class="title">Branding</div>
+                            <div class="count">11</div>
+                        </article>
+                        <article class="counters-sec business">
+                            <div class="title">Business</div>
+                            <div class="count">11</div>
+                        </article>
+                    </section>
+
+
+                </div>
+                <div class="create-ques">
+                    <img src="img/arrow.png" alt="" />
+                    <span>Create
+                        Questionnaire </span>
+                </div>
+            </section>
+
+
+
+            <section class="top-title">
+                <div class="container">
+                    <div class="hdg">
+                        <h2>Questionnaire</h2>
+                    </div>
+                    <form action="" class="search-bar">
+                        <div class="input-box  search-ic">
+                            <input type="search" class="form-input" placeholder="Search User">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="ques-list">
+                <div class="container">
+
+                    <div class="table">
+                        <div class="table-header">
+                            <div class="header__item"><a id="name" class="filter__link" href="#">Name</a></div>
+                            <div class="header__item"><a id="mobile" class="filter__link filter__link--number"
+                                    href="#">Mobile</a></div>
+                            <div class="header__item"><a id="email" class="filter__link filter__link--number"
+                                    href="#">Email</a></div>
+                            <div class="header__item"><a id="date" class="filter__link filter__link--number"
+                                    href="#">Date</a></div>
+                            <div class="header__item"><a id="status" class="filter__link filter__link--number"
+                                    href="#">Status</a></div>
+                            <div class="header__item"><a id="type" class="filter__link filter__link--number"
+                                    href="#">Type</a></div>
+                        </div>
+                        <div class="table-content">
+                            <div class="table-row">
+                                <div class="table-data">Marie Pearson</div>
+                                <div class="table-data">(410)465-7076</div>
+                                <div class="table-data">keanu.pierce@mail.com</div>
+                                <div class="table-data">15/08/1970</div>
+                                <div class="table-data"><span class="dot sky-blue"></span> Pending</div>
+                                <div class="table-data"><span class="sky-blue qtType">Business</span> </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-data">Alex Lynch</div>
+                                <div class="table-data">(416)003-7055</div>
+                                <div class="table-data">elizabeth.barrett@mail.com</div>
+                                <div class="table-data">16/12/1956</div>
+                                <div class="table-data"><span class="dot pink"></span> Complete</div>
+                                <div class="table-data"><span class="pink qtType">Persona</span></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-data">Ryan McCoy</div>
+                                <div class="table-data">(205)411-7078</div>
+                                <div class="table-data">ethan.gilbert@mail.com</div>
+                                <div class="table-data">17/06/2012</div>
+                                <div class="table-data"><span class="dot pp"></span> Pending</div>
+                                <div class="table-data"><span class="pp qtType">Branding</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="side-screen">
+            <div class="side-bar--title"><span><img src="img/left-arrow.png"></span> Create Questionnaire</div>
+
+            <div>
+                <form action="" id="myform">
+                    <div class="input-box fullname">
+                        <span>Full Name</span>
+                        <input type="text" class="form-input " required>
+                    </div>
+                    <div class="input-box usrname">
+                        <span>Email ID</span>
+                        <input type="email" class="form-input" required>
+                    </div>
+                    <div class="input-box mobile">
+                        <span>Mobile</span>
+                        <input type="tel" class="form-input" required>
+                    </div>
+                    <div class="input-box ques">
+                        <span>Select Questionnaire</span>
+                        <div class="custom-choose mb-3">
+                            <div  class="sky-blue">
+                                <input type="radio" id="opt-1" value="business" name="questionnaire">
+                                <label for="opt-1">
+                                    Business
+                                </label>
+                            </div>
+                            <div  class="pink">
+                                <input type="radio" id="opt-2" value="Persona" name="questionnaire">
+                                <label for="opt-2">
+                                    Persona
+                                </label>
+                            </div>
+                            <div  class="pp">
+                                <input type="radio" id="opt-3" value="Branding" name="questionnaire">
+                                <label for="opt-3">
+                                    Branding
+                                </label>
+                            </div>
+
+                             
+                        </div>
+                    </div>
+                    <div class="input-box links none">
+                        <span>Link Generated</span>
+                        <input type="text" class="form-input" value="Hello World New" id="myInput">
+                        <button class="copy-url button-grd-line anim-link create-link"><span>Copy URL</span><em>Copy URL</em></button>
+                    </div>
+                    <button class="button-grd-line anim-link create-link"><span>Create</span><em>Create</em> </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/link/jquery-3.4.1.min.js"></script>
+    <script src="js/link/jquery.validate.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $("#myform").validate({
+            
+        });
+    </script>
+</body>
+
+</html>
